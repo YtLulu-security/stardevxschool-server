@@ -1,0 +1,16 @@
+{
+  "name": "stardevxschool-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Server StarDevXSchool: bagikan link, backup/restore, cek update (Vercel + Upstash Redis + Vercel Blob)",
+  "scripts": {
+    "dev": "node dev/server.js",
+    "test": "node test/smoke.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@upstash/redis": "^1.34.0",
+    "@vercel/blob": "^1.0.0"
+  }
+}
