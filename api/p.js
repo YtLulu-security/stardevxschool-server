@@ -21,7 +21,7 @@ export default async function (req, res) {
     res.setHeader('Content-Security-Policy', 'sandbox allow-scripts allow-popups allow-forms');
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Referrer-Policy', 'no-referrer');
-    res.setHeader('Cache-Control', 'public, max-age=30, s-maxage=30, stale-while-revalidate=120');
+    res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=3600, stale-while-revalidate=300');
     res.end(buf);
   } catch (e) {
     console.error(e);
